@@ -11,6 +11,13 @@ The `InvoiceCalculator` class contains business logic:
 - Apply discount
 - Validate invalid input
 
+The `ShippingCostCalculator` class contains another real-life example:
+
+- Calculate shipping by delivery zone
+- Apply free shipping for eligible orders
+- Add a heavy package surcharge
+- Reject invalid order totals, package weights, and zones
+
 The tests verify that this logic behaves correctly.
 
 ## File Structure
@@ -20,10 +27,12 @@ The tests verify that this logic behaves correctly.
 ├── composer.json
 ├── phpunit.xml
 ├── src
-│   └── InvoiceCalculator.php
+│   ├── InvoiceCalculator.php
+│   └── ShippingCostCalculator.php
 └── tests
     └── Unit
-        └── InvoiceCalculatorTest.php
+        ├── InvoiceCalculatorTest.php
+        └── ShippingCostCalculatorTest.php
 ```
 
 ## Install Dependencies
